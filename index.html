@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script type="text/javascript">
+		function checkpassword() {
+					var password = document.getElementById("passwordbox");
+					var passwordText= password.value;
+					if(passwordText== "password"){
+						return true;
+					}
+					else{
+						alert("Access Denied")
+						return false;
+					}
+				}
+	</script>
+	<title>password</title>
+</head>
+<body>
+		<h1>Welcome</h1>
+		<h3>Enter Password.</h3>
+		<p>password: <input id="passwordbox" type="password"></p>
+		<button><a href="jaxson.html" onclick="return checkpassword();"> Go here!</a></button>
+
+</body>
+</html>
